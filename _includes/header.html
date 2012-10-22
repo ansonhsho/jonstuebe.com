@@ -1,3 +1,4 @@
+{% capture root %}{% if page.root %}{{ page.root }}{% else %}{{ post.root }}{% endif %}{%endcapture%}
 <!DOCTYPE HTML>
 <!--[if lt IE 7]> <html class="lt-ie9 ie6 ie lt-ie8 lt-ie7" lang="en"><![endif]-->
 <!--[if IE 7]><html class="lt-ie9 ie7 ie lt-ie8" lang="en"><![endif]-->
@@ -12,6 +13,6 @@
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-	<link href="/css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+	<link href="{{ root }}css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
 </head>
 <body>
