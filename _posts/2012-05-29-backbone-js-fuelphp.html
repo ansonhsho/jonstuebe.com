@@ -1,0 +1,14 @@
+---
+layout: post
+title: Backbone.js & FuelPHP
+tags:
+- backbone.js
+- fuelphp
+status: publish
+type: post
+published: true
+meta:
+  _edit_last: '1'
+  dsq_thread_id: '707747601'
+---
+Recently I've started working with <a href="http://backbonejs.org/" target="_blank">Backbone.js</a> and started to integrate it into <a href="http://fuelphp.com/" target="_blank">FuelPHP</a>, my current framework of choice. Backbone's sync feature uses a restful set of ajax requests to hook up the javascript mvc to the backend of your choice. In the case of FuelPHP, I had some issues since Fuel's Validation class uses the POST variables by default, and Backbone sends over all of the variables in a JSON string.<!--more--> To combat this, I'm using the Hybrid Controller with no custom routes. Pretty awesome really. <a href="https://gist.github.com/2831912" target="_blank">Here's the start of the controller</a>.
